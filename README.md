@@ -66,13 +66,7 @@ Filters notes dynamically using search() reducer.
 
 
 
-📁 Folder Structure
-src/
-├── components/
-│   └── Home.jsx
-├── redux/
-│   └── noteSlice.js
-└── App.js
+
 
 🎯 What This Project Demonstrates
 
