@@ -1,16 +1,89 @@
-# React + Vite
+📝 EaseNote – A Fast & Simple Note-Taking App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Quick Note is a lightweight React + Redux application that allows users to create, edit, search, and delete notes with ease. Designed with a clean UI and powered by Redux Toolkit, it ensures smooth state management and a seamless user experience. SweetAlert2 is integrated for elegant alerts and feedback.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✏️ Add Notes
 
-## React Compiler
+Create new notes with a title and content field. Provides instant visual feedback using SweetAlert2.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛠 Edit Notes
 
-## Expanding the ESLint configuration
+Easily update existing notes. Clicking EDIT loads the note data into the form. The UPDATE button appears through conditional rendering.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+❌ Delete Notes
+
+Remove any note instantly using the delete button.
+
+🔍 Search Notes
+
+Real-time search by note title using a Redux reducer.
+
+🎨 UI Enhancements
+
+Clean, minimal card-based layout
+
+Background image with centered layout
+
+Bootstrap for responsive styling
+
+SweetAlert2 for visually appealing alerts
+
+🧰 Tech Stack
+
+React.js
+
+Redux Toolkit
+
+Bootstrap 5
+
+SweetAlert2
+
+JavaScript (ES6+)
+
+📂 Core Logic Overview
+🔹 Add Note
+
+Dispatches addNote() with title and content.
+Form resets automatically.
+
+🔹 Edit Note
+
+Loads selected note into input fields and switches the button to UPDATE mode.
+
+🔹 Update Note
+
+Dispatches editNote() using the selected ID.
+
+🔹 Delete Note
+
+Removes note using deleteNote().
+
+🔹 Search Note
+
+Filters notes dynamically using search() reducer.
+
+
+
+📁 Folder Structure
+src/
+├── components/
+│   └── Home.jsx
+├── redux/
+│   └── noteSlice.js
+└── App.js
+
+🎯 What This Project Demonstrates
+
+Redux Toolkit for CRUD operations
+
+Conditional rendering in React
+
+Clean UI with Bootstrap
+
+Realtime search functionality
+
+Alert handling with SweetAlert2
+
+Component + state structuring
